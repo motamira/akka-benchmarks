@@ -3,7 +3,7 @@ package pt.aigx.actors;
 /**
  * Created by emiranda on 23-02-2015.
  */
-public class Spacey extends ObservableActor {
+public class Spacey extends MasterActor {
 
     @Override
     public boolean isMessageForMe(String text) {

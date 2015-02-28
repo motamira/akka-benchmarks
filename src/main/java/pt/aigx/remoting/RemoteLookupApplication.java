@@ -10,7 +10,7 @@ import pt.aigx.remoting.actors.RemoteLookupActor;
  */
 public class RemoteLookupApplication {
 
-    private final static String remotePath = "akka.tcp://RouterSystem@127.0.0.1:2555/user/routerActor";
+    private final static String remotePath = "akka.tcp://RouterSystem@192.168.1.5:2555/user/controllerActor";
 
     public static void main(String args[]) {
         startRemoteLookupSystem();
