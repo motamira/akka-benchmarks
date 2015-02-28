@@ -4,6 +4,9 @@ import akka.actor.UntypedActor;
 import pt.aigx.actors.messages.SimpleStringMessage;
 
 /**
+ * An abstract Master actor. All actors on this namespace extend from this one. Each child defines which message is for
+ * him, and, by default, just publishes a "Done" message to the main event stream if the message is indeed for him.
+ * <p>
  * Created by emiranda on 23-02-2015.
  */
 abstract public class MasterActor extends UntypedActor {
@@ -25,10 +28,19 @@ abstract public class MasterActor extends UntypedActor {
         }
     }
 
+    /**
+     * Publishes a "Done" SimpleStringMessage to the main event stream.
+     */
     private void publishMessageProcessed() {
         getContext().system().eventStream().publish(new SimpleStringMessage("Done"));
     }
 
+    /**
+     * Extracts the text from the SimpleStringMessage object.
+     *
+     * @param message The message received by the actor
+     * @return The extracted text (String)
+     */
     protected String extractTextFromMessage(Object message) {
         return ((SimpleStringMessage) message).getText();
     }

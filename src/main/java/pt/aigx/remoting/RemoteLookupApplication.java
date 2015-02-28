@@ -5,9 +5,6 @@ import akka.actor.Props;
 import com.typesafe.config.ConfigFactory;
 import pt.aigx.remoting.actors.RemoteLookupActor;
 
-/**
- * Created by emiranda on 2/20/15.
- */
 public class RemoteLookupApplication {
 
     private final static String remotePath = "akka.tcp://RouterSystem@192.168.1.5:2555/user/controllerActor";

@@ -2,7 +2,6 @@ package pt.aigx.actors;
 
 import pt.aigx.Config;
 import scala.concurrent.duration.Duration;
-
 import java.util.concurrent.TimeUnit;
 
 /**
@@ -12,7 +11,6 @@ public class ProgressObserver extends MasterActor {
 
     long startedTime = 0;
     int processedMessages = 0;
-
 
     /**
      * @param message

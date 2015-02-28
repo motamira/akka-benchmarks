@@ -1,15 +1,12 @@
-package pt.aigx.routing;
+package pt.aigx.remoting;
 
 import pt.aigx.AbstractRouterApplication;
 import pt.aigx.routing.actors.RouterActor;
 
-public class RouterApplication extends AbstractRouterApplication {
+public class RemoteRouterApplication extends AbstractRouterApplication {
 
-    /**
-     * @param args
-     */
-    public static void main(String[] args) {
-        new RouterApplication().generateLoad();
+    public static void main(String args[]) {
+        new RemoteRouterApplication();
     }
 
     @Override
@@ -19,6 +16,6 @@ public class RouterApplication extends AbstractRouterApplication {
 
     @Override
     public String getSystemConfig() {
-        return "router";
+        return "remote-router";
     }
 }
