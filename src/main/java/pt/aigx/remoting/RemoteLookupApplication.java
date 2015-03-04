@@ -7,17 +7,12 @@ import pt.aigx.remoting.actors.RemoteLookupActor;
 
 public class RemoteLookupApplication {
 
-    private final static String remotePath = "akka.tcp://RouterSystem@192.168.1.5:2555/user/controllerActor";
-
     public static void main(String args[]) {
-        startRemoteLookupSystem();
+        new RemoteLookupApplication().startRemoteLookupSystem();
     }
 
-    public static void startRemoteLookupSystem() {
-
+    public void startRemoteLookupSystem() {
         final ActorSystem system = ActorSystem.create("RemoteLookupSystem", ConfigFactory.load("remote-lookup"));
-        system.actorOf(Props.create(RemoteLookupActor.class, remotePath), "remoteLookupActor");
-
-        System.out.println("Started Remote Lookup System");
+        system.actorOf(Props.create(RemoteLookupActor.class), "remoteLookupActor");
     }
 }

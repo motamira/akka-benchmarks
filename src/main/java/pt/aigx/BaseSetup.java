@@ -6,25 +6,23 @@ import akka.actor.Props;
 import akka.routing.FromConfig;
 import com.typesafe.config.ConfigFactory;
 import pt.aigx.actors.ProgressObserver;
-import pt.aigx.actors.messages.RouterStringMessage;
 import pt.aigx.actors.messages.SimpleStringMessage;
-import java.util.ArrayList;
-import java.util.Random;
+import java.util.HashMap;
+import java.util.Map;
 
-abstract public class AbstractRouterApplication {
+abstract public class BaseSetup {
 
     private final static String actorsNamespace = "pt.aigx.actors";
-    private final static Random random = new Random();
 
     private ActorSystem system;
-    private ArrayList<ActorRef> actorReferences = new ArrayList<>(Config.actors.length - 1);
+    private Map<String, ActorRef> actorReferences = new HashMap<>();
     private ActorRef routerActor;
 
     abstract public Class getRouterClass();
 
     abstract public String getSystemConfig();
 
-    public ArrayList<ActorRef> getActorReferences() {
+    public Map<String, ActorRef> getActorReferences() {
         return actorReferences;
     }
 
@@ -40,7 +38,7 @@ abstract public class AbstractRouterApplication {
         this.routerActor = routerActor;
     }
 
-    public AbstractRouterApplication() {
+    public BaseSetup() {
         this.setup();
     }
 
@@ -81,16 +79,13 @@ abstract public class AbstractRouterApplication {
     }
 
     /**
-     * Setups as many actors as defined in the {@link actors} array. These behave as "classifiers" since they publish
+     * Setups as many actors as defined in the {@link Config.actors} array. These behave as "classifiers" since they publish
      * a message as soon as they are done with processing something.
      */
     private void setupClassifierActors() throws ClassNotFoundException {
-
-        this.actorReferences = new ArrayList<>();
-
         for (String actor : Config.actors) {
             Props actorProps = Props.create(Class.forName(String.format("%s.%s", actorsNamespace, actor)));
-            this.actorReferences.add(system.actorOf(actorProps, actor));
+            this.actorReferences.put(actor, system.actorOf(actorProps, actor));
         }
     }
 
@@ -102,36 +97,5 @@ abstract public class AbstractRouterApplication {
     private void setupRouterActor() {
         Props routerProps = FromConfig.getInstance().props(Props.create(this.getRouterClass()));
         this.setRouterActor(system.actorOf(routerProps, "routerActor"));
-    }
-
-    /**
-     * Method that generates load (sends messages to the router actor). Messages will be later sent to each classifier
-     * randomly.
-     *
-     * @see pt.aigx.Config.NUMBER_OF_MESSAGES
-     */
-    public void generateLoad() {
-
-        long startedTime = System.currentTimeMillis();
-        System.out.println("Starting feeding router with messages");
-
-        for (int i = Config.NUMBER_OF_MESSAGES; i > 0; i--) {
-            int randomIndex = this.getRandomActorIndex();
-            // To send messages through the router actor use the line below
-            this.getRouterActor().tell(
-                    new RouterStringMessage(this.actorReferences.get(randomIndex), Config.actors[randomIndex]), null);
-            // To bypass the router use the line below
-//          this.actorReferences.get(randomIndex).tell(new SimpleStringMessage(Config.actors[randomIndex]), null);
-        }
-
-        long now = System.currentTimeMillis();
-        System.out.println("All jobs sent successfully in " + (now - startedTime) / 1000 + " seconds");
-    }
-
-    /**
-     * @return The generated actor index to be used in the message sending
-     */
-    private int getRandomActorIndex() {
-        return random.nextInt(Config.actors.length);
     }
 }

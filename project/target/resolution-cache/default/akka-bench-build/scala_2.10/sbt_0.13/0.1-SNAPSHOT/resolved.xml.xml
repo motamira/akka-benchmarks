@@ -4,7 +4,7 @@
 		module="akka-bench-build"
 		revision="0.1-SNAPSHOT"
 		status="integration"
-		publication="20150225113928"
+		publication="20150228175000"
 		e:sbtVersion="0.13" e:scalaVersion="2.10"
 	>
 		<description>

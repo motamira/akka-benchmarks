@@ -2,55 +2,44 @@ package pt.aigx.remoting.actors;
 
 import akka.actor.*;
 import pt.aigx.Config;
-import pt.aigx.actors.messages.SimpleStringMessage;
+import pt.aigx.RandomMessageSender;
+import pt.aigx.routing.actors.RouterActor;
 
-/**
- * Created by emiranda on 2/20/15.
- */
+import java.util.HashMap;
+import java.util.Map;
+
 public class RemoteLookupActor extends UntypedActor {
 
-    private final String remotePath;
-    private ActorRef remoteRouterActor = null;
+    private final static String remoteBasePath = "akka.tcp://RouterSystem@127.0.0.1:2555/user";
 
-    public RemoteLookupActor(String remotePath) {
-        this.remotePath = remotePath;
-        this.sendIdentifyRequest();
+    private Map<String, ActorRef> actorReferences = new HashMap<>();
+    private int identifiedActors = 0;
+
+    public RemoteLookupActor() {
+        this.discoverActors();
     }
 
-    private void sendIdentifyRequest() {
-        getContext().actorSelection(remotePath).tell(new Identify(remotePath), getSelf());
-//        getContext().system().scheduler()
-//                .scheduleOnce(Duration.create(1, TimeUnit.SECONDS), getSelf(),
-//                        ReceiveTimeout.getInstance(), getContext().dispatcher(), getSelf());
+    private void discoverActors() {
+        for (String actor : Config.actors) {
+            String fullPath = String.format("%s/%s", remoteBasePath, actor);
+            getContext().actorSelection(fullPath).tell(new Identify(fullPath), getSelf());
+        }
     }
 
     @Override
     public void onReceive(Object message) throws Exception {
 
         if (this.isMessageActorIdentity(message)) {
+            ActorRef actor = ((ActorIdentity) message).getRef();
 
-            remoteRouterActor = ((ActorIdentity) message).getRef();
+            this.actorReferences.put(actor.path().name(), actor);
+            identifiedActors++;
 
-            if (!this.isRemoteActorAvailable()) {
-                System.out.println("Remote actor not available: " + remotePath);
-                this.sendIdentifyRequest();
-            } else {
-                this.feedRequests();
+            if (Config.actors.length == identifiedActors) {
+                ActorRef router = getContext().system().actorOf(Props.create(RouterActor.class), "remoteRouterActor");
+                new RandomMessageSender().send(router, this.actorReferences);
             }
         }
-    }
-
-    private void feedRequests() {
-
-        long startedTime = System.currentTimeMillis();
-        System.out.println("Starting feeding remote actor with messages");
-
-        for (int i = Config.NUMBER_OF_MESSAGES; i > 0; i--) {
-            remoteRouterActor.tell(new SimpleStringMessage("Done"), getSelf());
-        }
-
-        long now = System.currentTimeMillis();
-        System.out.println("All jobs sent successfully in " + (now - startedTime) / 1000 + " seconds");
     }
 
     /**
@@ -59,12 +48,5 @@ public class RemoteLookupActor extends UntypedActor {
      */
     private boolean isMessageActorIdentity(Object message) {
         return (message instanceof ActorIdentity);
-    }
-
-    /**
-     * @return Whether the remote controller actor is available or not.
-     */
-    private boolean isRemoteActorAvailable() {
-        return (remoteRouterActor != null);
     }
 }

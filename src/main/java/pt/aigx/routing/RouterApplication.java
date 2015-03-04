@@ -1,24 +1,15 @@
 package pt.aigx.routing;
 
-import pt.aigx.AbstractRouterApplication;
-import pt.aigx.routing.actors.RouterActor;
+import pt.aigx.RandomMessageSender;
+import pt.aigx.routing.setups.RegularRouterSetup;
 
-public class RouterApplication extends AbstractRouterApplication {
+public class RouterApplication {
 
     /**
      * @param args
      */
     public static void main(String[] args) {
-        new RouterApplication().generateLoad();
-    }
-
-    @Override
-    public Class getRouterClass() {
-        return RouterActor.class;
-    }
-
-    @Override
-    public String getSystemConfig() {
-        return "router";
+        RegularRouterSetup setup = new RegularRouterSetup();
+        new RandomMessageSender().send(setup.getRouterActor(), setup.getActorReferences());
     }
 }

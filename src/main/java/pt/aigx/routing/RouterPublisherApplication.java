@@ -1,33 +1,12 @@
 package pt.aigx.routing;
 
-import akka.actor.ActorRef;
-import pt.aigx.AbstractRouterApplication;
-import pt.aigx.actors.messages.SimpleStringMessage;
-import pt.aigx.routing.actors.PublisherRouterActor;
+import pt.aigx.RandomMessageSender;
+import pt.aigx.routing.setups.PublisherRouterSetup;
 
-/**
- * Created by emiranda on 2/27/15.
- */
-public class RouterPublisherApplication extends AbstractRouterApplication {
+public class RouterPublisherApplication {
 
     public static void main(String[] args) {
-        new RouterPublisherApplication().generateLoad();
-    }
-
-    public RouterPublisherApplication() {
-        super();
-        for (ActorRef actor : this.getActorReferences()) {
-            getSystem().eventStream().subscribe(actor, SimpleStringMessage.class);
-        }
-    }
-
-    @Override
-    public Class getRouterClass() {
-        return PublisherRouterActor.class;
-    }
-
-    @Override
-    public String getSystemConfig() {
-        return "router";
+        PublisherRouterSetup setup = new PublisherRouterSetup();
+        new RandomMessageSender().send(setup.getRouterActor(), setup.getActorReferences());
     }
 }

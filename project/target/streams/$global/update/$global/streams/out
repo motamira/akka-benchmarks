@@ -1,4 +1,4 @@
-[info] Updating {file:/home/emiranda/activator-1.2.12/akka-bench/project/}akka-bench-build...
+[info] Updating {file:/home/emiranda/Activator/akka-bench/project/}akka-bench-build...
 [debug] :: resolving dependencies :: default#akka-bench-build;0.1-SNAPSHOT
 [debug] 	confs: [compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom, scala-tool]
 [debug] 	validate = true
@@ -64,9 +64,9 @@
 [debug] 	found com.github.mpeltonen#sbt-idea;1.5.2 in sbt-chain
 [debug] == resolving dependencies default#akka-bench-build;0.1-SNAPSHOT->com.github.mpeltonen#sbt-idea;1.5.2 [compile->runtime]
 [debug] == resolving dependencies default#akka-bench-build;0.1-SNAPSHOT->com.github.mpeltonen#sbt-idea;1.5.2 [compile->compile]
-[debug] == resolving dependencies com.github.mpeltonen#sbt-idea;1.5.2->commons-io#commons-io;2.0.1 [compile->master(*)]
+[debug] == resolving dependencies com.github.mpeltonen#sbt-idea;1.5.2->commons-io#commons-io;2.0.1 [compile->master(compile)]
 [info] Resolving commons-io#commons-io;2.0.1 ...
-[debug] sbt-chain: Checking cache for: dependency: commons-io#commons-io;2.0.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]}
+[debug] sbt-chain: Checking cache for: dependency: commons-io#commons-io;2.0.1 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
 [debug] sbt-chain: module revision found in cache: commons-io#commons-io;2.0.1
 [debug] 	typesafe-ivy-releases: revision in cache: commons-io#commons-io;2.0.1
 [debug] 	found commons-io#commons-io;2.0.1 in sbt-chain
@@ -104,7 +104,7 @@
 [debug] == resolving dependencies default#akka-bench-build;0.1-SNAPSHOT->com.github.mpeltonen#sbt-idea;1.5.2 [compile->default(compile)]
 [debug] == resolving dependencies default#akka-bench-build;0.1-SNAPSHOT->com.github.mpeltonen#sbt-idea;1.5.2 [compile->runtime]
 [debug] == resolving dependencies default#akka-bench-build;0.1-SNAPSHOT->com.github.mpeltonen#sbt-idea;1.5.2 [compile->compile]
-[debug] == resolving dependencies com.github.mpeltonen#sbt-idea;1.5.2->commons-io#commons-io;2.0.1 [compile->master(*)]
+[debug] == resolving dependencies com.github.mpeltonen#sbt-idea;1.5.2->commons-io#commons-io;2.0.1 [compile->master(compile)]
 [debug] == resolving dependencies com.github.mpeltonen#sbt-idea;1.5.2->commons-io#commons-io;2.0.1 [compile->compile(*)]
 [debug] == resolving dependencies com.github.mpeltonen#sbt-idea;1.5.2->commons-io#commons-io;2.0.1 [runtime->runtime(*)]
 [debug] == resolving dependencies com.github.mpeltonen#sbt-idea;1.5.2->commons-io#commons-io;2.0.1 [runtime->compile]
@@ -138,7 +138,7 @@
 [debug] == resolving dependencies default#akka-bench-build;0.1-SNAPSHOT->com.github.mpeltonen#sbt-idea;1.5.2 [compile->default(compile)]
 [debug] == resolving dependencies default#akka-bench-build;0.1-SNAPSHOT->com.github.mpeltonen#sbt-idea;1.5.2 [compile->runtime]
 [debug] == resolving dependencies default#akka-bench-build;0.1-SNAPSHOT->com.github.mpeltonen#sbt-idea;1.5.2 [compile->compile]
-[debug] == resolving dependencies com.github.mpeltonen#sbt-idea;1.5.2->commons-io#commons-io;2.0.1 [compile->master(*)]
+[debug] == resolving dependencies com.github.mpeltonen#sbt-idea;1.5.2->commons-io#commons-io;2.0.1 [compile->master(compile)]
 [debug] == resolving dependencies com.github.mpeltonen#sbt-idea;1.5.2->commons-io#commons-io;2.0.1 [compile->compile(*)]
 [debug] == resolving dependencies com.github.mpeltonen#sbt-idea;1.5.2->commons-io#commons-io;2.0.1 [runtime->runtime(*)]
 [debug] == resolving dependencies com.github.mpeltonen#sbt-idea;1.5.2->commons-io#commons-io;2.0.1 [runtime->compile]
@@ -147,7 +147,7 @@
 [debug] == resolving dependencies for default#akka-bench-build;0.1-SNAPSHOT [provided]
 [debug] == resolving dependencies default#akka-bench-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.4 [provided->default(compile)]
 [info] Resolving org.scala-lang#scala-library;2.10.4 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@35f547d
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@30157320
 [debug] sbt-chain: module revision found in cache: org.scala-lang#scala-library;2.10.4
 [debug] 	typesafe-ivy-releases: revision in cache: org.scala-lang#scala-library;2.10.4
 [debug] 	found org.scala-lang#scala-library;2.10.4 in sbt-chain
@@ -736,7 +736,7 @@
 [debug] == resolving dependencies default#akka-bench-build;0.1-SNAPSHOT->com.github.mpeltonen#sbt-idea;1.5.2 [compile->default(compile)]
 [debug] == resolving dependencies default#akka-bench-build;0.1-SNAPSHOT->com.github.mpeltonen#sbt-idea;1.5.2 [compile->runtime]
 [debug] == resolving dependencies default#akka-bench-build;0.1-SNAPSHOT->com.github.mpeltonen#sbt-idea;1.5.2 [compile->compile]
-[debug] == resolving dependencies com.github.mpeltonen#sbt-idea;1.5.2->commons-io#commons-io;2.0.1 [compile->master(*)]
+[debug] == resolving dependencies com.github.mpeltonen#sbt-idea;1.5.2->commons-io#commons-io;2.0.1 [compile->master(compile)]
 [debug] == resolving dependencies com.github.mpeltonen#sbt-idea;1.5.2->commons-io#commons-io;2.0.1 [compile->compile(*)]
 [debug] == resolving dependencies com.github.mpeltonen#sbt-idea;1.5.2->commons-io#commons-io;2.0.1 [runtime->runtime(*)]
 [debug] == resolving dependencies com.github.mpeltonen#sbt-idea;1.5.2->commons-io#commons-io;2.0.1 [runtime->compile]
@@ -1096,7 +1096,7 @@
 [debug] == resolving dependencies default#akka-bench-build;0.1-SNAPSHOT->com.github.mpeltonen#sbt-idea;1.5.2 [compile->default(compile)]
 [debug] == resolving dependencies default#akka-bench-build;0.1-SNAPSHOT->com.github.mpeltonen#sbt-idea;1.5.2 [compile->runtime]
 [debug] == resolving dependencies default#akka-bench-build;0.1-SNAPSHOT->com.github.mpeltonen#sbt-idea;1.5.2 [compile->compile]
-[debug] == resolving dependencies com.github.mpeltonen#sbt-idea;1.5.2->commons-io#commons-io;2.0.1 [compile->master(*)]
+[debug] == resolving dependencies com.github.mpeltonen#sbt-idea;1.5.2->commons-io#commons-io;2.0.1 [compile->master(compile)]
 [debug] == resolving dependencies com.github.mpeltonen#sbt-idea;1.5.2->commons-io#commons-io;2.0.1 [compile->compile(*)]
 [debug] == resolving dependencies com.github.mpeltonen#sbt-idea;1.5.2->commons-io#commons-io;2.0.1 [runtime->runtime(*)]
 [debug] == resolving dependencies com.github.mpeltonen#sbt-idea;1.5.2->commons-io#commons-io;2.0.1 [runtime->compile]
@@ -1138,7 +1138,7 @@
 [debug] == resolving dependencies default#akka-bench-build;0.1-SNAPSHOT->com.github.mpeltonen#sbt-idea;1.5.2 [compile->default(compile)]
 [debug] == resolving dependencies default#akka-bench-build;0.1-SNAPSHOT->com.github.mpeltonen#sbt-idea;1.5.2 [compile->runtime]
 [debug] == resolving dependencies default#akka-bench-build;0.1-SNAPSHOT->com.github.mpeltonen#sbt-idea;1.5.2 [compile->compile]
-[debug] == resolving dependencies com.github.mpeltonen#sbt-idea;1.5.2->commons-io#commons-io;2.0.1 [compile->master(*)]
+[debug] == resolving dependencies com.github.mpeltonen#sbt-idea;1.5.2->commons-io#commons-io;2.0.1 [compile->master(compile)]
 [debug] == resolving dependencies com.github.mpeltonen#sbt-idea;1.5.2->commons-io#commons-io;2.0.1 [compile->compile(*)]
 [debug] == resolving dependencies com.github.mpeltonen#sbt-idea;1.5.2->commons-io#commons-io;2.0.1 [runtime->runtime(*)]
 [debug] == resolving dependencies com.github.mpeltonen#sbt-idea;1.5.2->commons-io#commons-io;2.0.1 [runtime->compile]
@@ -1577,19 +1577,19 @@
 [debug] 	[NOT REQUIRED] org.scala-sbt#apply-macro;0.13.5!apply-macro.jar
 [debug] 	[NOT REQUIRED] org.scala-lang#jline;2.10.4!jline.jar
 [debug] 	[NOT REQUIRED] org.fusesource.jansi#jansi;1.4!jansi.jar
-[debug] :: resolution report :: resolve 4432ms :: artifacts dl 137ms
-[debug] 	report for default#akka-bench-build;0.1-SNAPSHOT compile produced in /home/emiranda/activator-1.2.12/akka-bench/project/target/resolution-cache/reports/default-akka-bench-build-compile.xml
-[debug] 	report for default#akka-bench-build;0.1-SNAPSHOT runtime produced in /home/emiranda/activator-1.2.12/akka-bench/project/target/resolution-cache/reports/default-akka-bench-build-runtime.xml
-[debug] 	report for default#akka-bench-build;0.1-SNAPSHOT test produced in /home/emiranda/activator-1.2.12/akka-bench/project/target/resolution-cache/reports/default-akka-bench-build-test.xml
-[debug] 	report for default#akka-bench-build;0.1-SNAPSHOT provided produced in /home/emiranda/activator-1.2.12/akka-bench/project/target/resolution-cache/reports/default-akka-bench-build-provided.xml
-[debug] 	report for default#akka-bench-build;0.1-SNAPSHOT optional produced in /home/emiranda/activator-1.2.12/akka-bench/project/target/resolution-cache/reports/default-akka-bench-build-optional.xml
-[debug] 	report for default#akka-bench-build;0.1-SNAPSHOT compile-internal produced in /home/emiranda/activator-1.2.12/akka-bench/project/target/resolution-cache/reports/default-akka-bench-build-compile-internal.xml
-[debug] 	report for default#akka-bench-build;0.1-SNAPSHOT runtime-internal produced in /home/emiranda/activator-1.2.12/akka-bench/project/target/resolution-cache/reports/default-akka-bench-build-runtime-internal.xml
-[debug] 	report for default#akka-bench-build;0.1-SNAPSHOT test-internal produced in /home/emiranda/activator-1.2.12/akka-bench/project/target/resolution-cache/reports/default-akka-bench-build-test-internal.xml
-[debug] 	report for default#akka-bench-build;0.1-SNAPSHOT plugin produced in /home/emiranda/activator-1.2.12/akka-bench/project/target/resolution-cache/reports/default-akka-bench-build-plugin.xml
-[debug] 	report for default#akka-bench-build;0.1-SNAPSHOT sources produced in /home/emiranda/activator-1.2.12/akka-bench/project/target/resolution-cache/reports/default-akka-bench-build-sources.xml
-[debug] 	report for default#akka-bench-build;0.1-SNAPSHOT docs produced in /home/emiranda/activator-1.2.12/akka-bench/project/target/resolution-cache/reports/default-akka-bench-build-docs.xml
-[debug] 	report for default#akka-bench-build;0.1-SNAPSHOT pom produced in /home/emiranda/activator-1.2.12/akka-bench/project/target/resolution-cache/reports/default-akka-bench-build-pom.xml
-[debug] 	report for default#akka-bench-build;0.1-SNAPSHOT scala-tool produced in /home/emiranda/activator-1.2.12/akka-bench/project/target/resolution-cache/reports/default-akka-bench-build-scala-tool.xml
-[debug] 	resolve done (4432ms resolve - 137ms download)
+[debug] :: resolution report :: resolve 793ms :: artifacts dl 26ms
+[debug] 	report for default#akka-bench-build;0.1-SNAPSHOT compile produced in /home/emiranda/Activator/akka-bench/project/target/resolution-cache/reports/default-akka-bench-build-compile.xml
+[debug] 	report for default#akka-bench-build;0.1-SNAPSHOT runtime produced in /home/emiranda/Activator/akka-bench/project/target/resolution-cache/reports/default-akka-bench-build-runtime.xml
+[debug] 	report for default#akka-bench-build;0.1-SNAPSHOT test produced in /home/emiranda/Activator/akka-bench/project/target/resolution-cache/reports/default-akka-bench-build-test.xml
+[debug] 	report for default#akka-bench-build;0.1-SNAPSHOT provided produced in /home/emiranda/Activator/akka-bench/project/target/resolution-cache/reports/default-akka-bench-build-provided.xml
+[debug] 	report for default#akka-bench-build;0.1-SNAPSHOT optional produced in /home/emiranda/Activator/akka-bench/project/target/resolution-cache/reports/default-akka-bench-build-optional.xml
+[debug] 	report for default#akka-bench-build;0.1-SNAPSHOT compile-internal produced in /home/emiranda/Activator/akka-bench/project/target/resolution-cache/reports/default-akka-bench-build-compile-internal.xml
+[debug] 	report for default#akka-bench-build;0.1-SNAPSHOT runtime-internal produced in /home/emiranda/Activator/akka-bench/project/target/resolution-cache/reports/default-akka-bench-build-runtime-internal.xml
+[debug] 	report for default#akka-bench-build;0.1-SNAPSHOT test-internal produced in /home/emiranda/Activator/akka-bench/project/target/resolution-cache/reports/default-akka-bench-build-test-internal.xml
+[debug] 	report for default#akka-bench-build;0.1-SNAPSHOT plugin produced in /home/emiranda/Activator/akka-bench/project/target/resolution-cache/reports/default-akka-bench-build-plugin.xml
+[debug] 	report for default#akka-bench-build;0.1-SNAPSHOT sources produced in /home/emiranda/Activator/akka-bench/project/target/resolution-cache/reports/default-akka-bench-build-sources.xml
+[debug] 	report for default#akka-bench-build;0.1-SNAPSHOT docs produced in /home/emiranda/Activator/akka-bench/project/target/resolution-cache/reports/default-akka-bench-build-docs.xml
+[debug] 	report for default#akka-bench-build;0.1-SNAPSHOT pom produced in /home/emiranda/Activator/akka-bench/project/target/resolution-cache/reports/default-akka-bench-build-pom.xml
+[debug] 	report for default#akka-bench-build;0.1-SNAPSHOT scala-tool produced in /home/emiranda/Activator/akka-bench/project/target/resolution-cache/reports/default-akka-bench-build-scala-tool.xml
+[debug] 	resolve done (793ms resolve - 26ms download)
 [info] Done updating.
