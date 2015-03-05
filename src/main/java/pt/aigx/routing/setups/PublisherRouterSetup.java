@@ -3,7 +3,7 @@ package pt.aigx.routing.setups;
 import akka.actor.ActorRef;
 import pt.aigx.BaseSetup;
 import pt.aigx.actors.messages.SimpleStringMessage;
-import pt.aigx.routing.actors.PublisherRouterActor;
+import pt.aigx.actors.routers.PublisherRouterActor;
 
 import java.util.Map;
 

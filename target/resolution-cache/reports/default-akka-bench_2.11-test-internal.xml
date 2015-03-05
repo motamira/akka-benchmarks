@@ -7,39 +7,39 @@
 		revision="1.0"
 		conf="test-internal"
 		confs="compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom, scala-tool"
-		date="20150228175004"/>
+		date="20150305094422"/>
 	<dependencies>
 		<module organisation="com.novocode" name="junit-interface">
 			<revision name="0.10" status="release" pubdate="20130730150827" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://github.com/szeiger/junit-interface/" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="10">
 				<license name="Two-clause BSD-style license" url="http://github.com/szeiger/junit-interface/blob/master/LICENSE.txt"/>
-				<metadata-artifact status="no" details="" size="2761" time="0" location="/home/emiranda/.ivy2/cache/com.novocode/junit-interface/ivy-0.10.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/novocode/junit-interface/0.10/junit-interface-0.10.pom"/>
+				<metadata-artifact status="no" details="" size="2749" time="0" location="/home/emiranda/.ivy2/cache/com.novocode/junit-interface/ivy-0.10.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/com/novocode/junit-interface/0.10/junit-interface-0.10.pom"/>
 				<caller organisation="default" name="akka-bench_2.11" conf="test, compile, provided, test-internal, runtime, optional" rev="0.10" rev-constraint-default="0.10" rev-constraint-dynamic="0.10" callerrev="1.0"/>
 				<artifacts>
 					<artifact name="junit-interface" type="jar" ext="jar" status="no" details="" size="22633" time="0" location="/home/emiranda/.ivy2/cache/com.novocode/junit-interface/jars/junit-interface-0.10.jar">
-						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/novocode/junit-interface/0.10/junit-interface-0.10.jar"/>
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/com/novocode/junit-interface/0.10/junit-interface-0.10.jar"/>
 					</artifact>
 				</artifacts>
 			</revision>
 		</module>
 		<module organisation="org.scala-tools.testing" name="test-interface">
-			<revision name="0.5" status="release" pubdate="20100327233658" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="12">
-				<metadata-artifact status="no" details="" size="2210" time="0" location="/home/emiranda/.ivy2/cache/org.scala-tools.testing/test-interface/ivy-0.5.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scala-tools/testing/test-interface/0.5/test-interface-0.5.pom"/>
+			<revision name="0.5" status="release" pubdate="20100327233658" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="12">
+				<metadata-artifact status="no" details="" size="2210" time="0" location="/home/emiranda/.ivy2/cache/org.scala-tools.testing/test-interface/ivy-0.5.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/org/scala-tools/testing/test-interface/0.5/test-interface-0.5.pom"/>
 				<caller organisation="com.novocode" name="junit-interface" conf="default, compile, runtime, master" rev="0.5" rev-constraint-default="0.5" rev-constraint-dynamic="0.5" callerrev="0.10"/>
 				<artifacts>
 					<artifact name="test-interface" type="jar" ext="jar" status="no" details="" size="4407" time="0" location="/home/emiranda/.ivy2/cache/org.scala-tools.testing/test-interface/jars/test-interface-0.5.jar">
-						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scala-tools/testing/test-interface/0.5/test-interface-0.5.jar"/>
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/scala-tools/testing/test-interface/0.5/test-interface-0.5.jar"/>
 					</artifact>
 				</artifacts>
 			</revision>
 		</module>
 		<module organisation="junit" name="junit-dep">
-			<revision name="4.10" status="release" pubdate="20110929201235" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://junit.org" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="11">
+			<revision name="4.10" status="release" pubdate="20110929201235" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://junit.org" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="11">
 				<license name="Common Public License Version 1.0" url="http://www.opensource.org/licenses/cpl1.0.txt"/>
-				<metadata-artifact status="no" details="" size="2779" time="0" location="/home/emiranda/.ivy2/cache/junit/junit-dep/ivy-4.10.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/junit/junit-dep/4.10/junit-dep-4.10.pom"/>
+				<metadata-artifact status="no" details="" size="2773" time="0" location="/home/emiranda/.ivy2/cache/junit/junit-dep/ivy-4.10.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/junit/junit-dep/4.10/junit-dep-4.10.pom"/>
 				<caller organisation="com.novocode" name="junit-interface" conf="default, compile, runtime, master" rev="4.10" rev-constraint-default="4.10" rev-constraint-dynamic="4.10" callerrev="0.10"/>
 				<artifacts>
 					<artifact name="junit-dep" type="jar" ext="jar" status="no" details="" size="234088" time="0" location="/home/emiranda/.ivy2/cache/junit/junit-dep/jars/junit-dep-4.10.jar">
-						<origin-location is-local="false" location="https://repo1.maven.org/maven2/junit/junit-dep/4.10/junit-dep-4.10.jar"/>
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/junit/junit-dep/4.10/junit-dep-4.10.jar"/>
 					</artifact>
 				</artifacts>
 			</revision>
@@ -57,37 +57,37 @@
 			</revision>
 		</module>
 		<module organisation="org.uncommons.maths" name="uncommons-maths">
-			<revision name="1.2.2a" status="release" pubdate="20110408145605" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://maths.uncommons.org/" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="6">
+			<revision name="1.2.2a" status="release" pubdate="20110408095605" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://maths.uncommons.org/" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="6">
 				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.html"/>
-				<metadata-artifact status="no" details="" size="2738" time="0" location="/home/emiranda/.ivy2/cache/org.uncommons.maths/uncommons-maths/ivy-1.2.2a.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/org/uncommons/maths/uncommons-maths/1.2.2a/uncommons-maths-1.2.2a.pom"/>
+				<metadata-artifact status="no" details="" size="2727" time="0" location="/home/emiranda/.ivy2/cache/org.uncommons.maths/uncommons-maths/ivy-1.2.2a.xml" searched="false" origin-is-local="false" origin-location="file:/home/emiranda/activator-1.2.12/repository/org.uncommons.maths/uncommons-maths/1.2.2a/ivys/ivy.xml"/>
 				<caller organisation="com.typesafe.akka" name="akka-remote_2.11" conf="default, compile, runtime, master" rev="1.2.2a" rev-constraint-default="1.2.2a" rev-constraint-dynamic="1.2.2a" callerrev="2.3.6"/>
 				<artifacts>
 					<artifact name="uncommons-maths" type="jar" ext="jar" status="no" details="" size="49019" time="0" location="/home/emiranda/.ivy2/cache/org.uncommons.maths/uncommons-maths/jars/uncommons-maths-1.2.2a.jar">
-						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/uncommons/maths/uncommons-maths/1.2.2a/uncommons-maths-1.2.2a.jar"/>
+						<origin-location is-local="false" location="file:/home/emiranda/activator-1.2.12/repository/org.uncommons.maths/uncommons-maths/1.2.2a/jars/uncommons-maths.jar"/>
 					</artifact>
 				</artifacts>
 			</revision>
 		</module>
 		<module organisation="io.netty" name="netty">
-			<revision name="3.8.0.Final" status="release" pubdate="20131107092312" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://netty.io/" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="4">
+			<revision name="3.8.0.Final" status="release" pubdate="20131107042312" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://netty.io/" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="4">
 				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
-				<metadata-artifact status="no" details="" size="6425" time="0" location="/home/emiranda/.ivy2/cache/io.netty/netty/ivy-3.8.0.Final.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/io/netty/netty/3.8.0.Final/netty-3.8.0.Final.pom"/>
+				<metadata-artifact status="no" details="" size="5415" time="0" location="/home/emiranda/.ivy2/cache/io.netty/netty/ivy-3.8.0.Final.xml" searched="false" origin-is-local="false" origin-location="file:/home/emiranda/activator-1.2.12/repository/io.netty/netty/3.8.0.Final/ivys/ivy.xml"/>
 				<caller organisation="com.typesafe.akka" name="akka-remote_2.11" conf="default, compile, runtime, master" rev="3.8.0.Final" rev-constraint-default="3.8.0.Final" rev-constraint-dynamic="3.8.0.Final" callerrev="2.3.6"/>
 				<artifacts>
 					<artifact name="netty" type="bundle" ext="jar" status="no" details="" size="1230201" time="0" location="/home/emiranda/.ivy2/cache/io.netty/netty/bundles/netty-3.8.0.Final.jar">
-						<origin-location is-local="false" location="http://repo1.maven.org/maven2/io/netty/netty/3.8.0.Final/netty-3.8.0.Final.jar"/>
+						<origin-location is-local="false" location="file:/home/emiranda/activator-1.2.12/repository/io.netty/netty/3.8.0.Final/bundles/netty.jar"/>
 					</artifact>
 				</artifacts>
 			</revision>
 		</module>
 		<module organisation="com.google.protobuf" name="protobuf-java">
-			<revision name="2.5.0" status="release" pubdate="20130308001811" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://code.google.com/p/protobuf" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="5">
+			<revision name="2.5.0" status="release" pubdate="20130307191811" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://code.google.com/p/protobuf" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="5">
 				<license name="New BSD license" url="http://www.opensource.org/licenses/bsd-license.php"/>
-				<metadata-artifact status="no" details="" size="2995" time="0" location="/home/emiranda/.ivy2/cache/com.google.protobuf/protobuf-java/ivy-2.5.0.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/com/google/protobuf/protobuf-java/2.5.0/protobuf-java-2.5.0.pom"/>
+				<metadata-artifact status="no" details="" size="2803" time="0" location="/home/emiranda/.ivy2/cache/com.google.protobuf/protobuf-java/ivy-2.5.0.xml" searched="false" origin-is-local="false" origin-location="file:/home/emiranda/activator-1.2.12/repository/com.google.protobuf/protobuf-java/2.5.0/ivys/ivy.xml"/>
 				<caller organisation="com.typesafe.akka" name="akka-remote_2.11" conf="default, compile, runtime, master" rev="2.5.0" rev-constraint-default="2.5.0" rev-constraint-dynamic="2.5.0" callerrev="2.3.6"/>
 				<artifacts>
 					<artifact name="protobuf-java" type="bundle" ext="jar" status="no" details="" size="533455" time="0" location="/home/emiranda/.ivy2/cache/com.google.protobuf/protobuf-java/bundles/protobuf-java-2.5.0.jar">
-						<origin-location is-local="false" location="http://repo1.maven.org/maven2/com/google/protobuf/protobuf-java/2.5.0/protobuf-java-2.5.0.jar"/>
+						<origin-location is-local="false" location="file:/home/emiranda/activator-1.2.12/repository/com.google.protobuf/protobuf-java/2.5.0/bundles/protobuf-java.jar"/>
 					</artifact>
 				</artifacts>
 			</revision>
@@ -105,9 +105,9 @@
 			</revision>
 		</module>
 		<module organisation="junit" name="junit">
-			<revision name="4.11" status="release" pubdate="20121114192147" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://junit.org" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="8">
+			<revision name="4.11" status="release" pubdate="20121114142147" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://junit.org" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="8">
 				<license name="Common Public License Version 1.0" url="http://www.opensource.org/licenses/cpl1.0.txt"/>
-				<metadata-artifact status="no" details="" size="2765" time="0" location="/home/emiranda/.ivy2/cache/junit/junit/ivy-4.11.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/junit/junit/4.11/junit-4.11.pom"/>
+				<metadata-artifact status="no" details="" size="2754" time="0" location="/home/emiranda/.ivy2/cache/junit/junit/ivy-4.11.xml" searched="false" origin-is-local="false" origin-location="file:/home/emiranda/activator-1.2.12/repository/junit/junit/4.11/ivys/ivy.xml"/>
 				<caller organisation="default" name="akka-bench_2.11" conf="test, compile, provided, test-internal, runtime, optional" rev="4.11" rev-constraint-default="4.11" rev-constraint-dynamic="4.11" callerrev="1.0"/>
 				<artifacts>
 					<artifact name="junit" type="jar" ext="jar" status="no" details="" size="245039" time="0" location="/home/emiranda/.ivy2/cache/junit/junit/jars/junit-4.11.jar">
@@ -117,8 +117,8 @@
 			</revision>
 		</module>
 		<module organisation="org.hamcrest" name="hamcrest-core">
-			<revision name="1.3" status="release" pubdate="20120709220802" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master, master(compile)" position="9">
-				<metadata-artifact status="no" details="" size="2397" time="0" location="/home/emiranda/.ivy2/cache/org.hamcrest/hamcrest-core/ivy-1.3.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.pom"/>
+			<revision name="1.3" status="release" pubdate="20120709170802" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="9">
+				<metadata-artifact status="no" details="" size="2387" time="0" location="/home/emiranda/.ivy2/cache/org.hamcrest/hamcrest-core/ivy-1.3.xml" searched="false" origin-is-local="false" origin-location="file:/home/emiranda/activator-1.2.12/repository/org.hamcrest/hamcrest-core/1.3/ivys/ivy.xml"/>
 				<caller organisation="junit" name="junit-dep" conf="compile, runtime" rev="1.1" rev-constraint-default="1.1" rev-constraint-dynamic="1.1" callerrev="4.10"/>
 				<caller organisation="junit" name="junit" conf="default, compile, runtime, master" rev="1.3" rev-constraint-default="1.3" rev-constraint-dynamic="1.3" callerrev="4.11"/>
 				<artifacts>
@@ -127,7 +127,7 @@
 					</artifact>
 				</artifacts>
 			</revision>
-			<revision name="1.1" evicted="latest-revision" evicted-reason="" downloaded="false" searched="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="-1">
+			<revision name="1.1" evicted="latest-revision" evicted-reason="" downloaded="false" searched="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="-1">
 				<evicted-by rev="1.3"/>
 				<caller organisation="junit" name="junit-dep" conf="compile, runtime" rev="1.1" rev-constraint-default="1.1" rev-constraint-dynamic="1.1" callerrev="4.10"/>
 				<artifacts>
@@ -149,13 +149,13 @@
 			</revision>
 		</module>
 		<module organisation="com.typesafe" name="config">
-			<revision name="1.2.1" status="release" pubdate="20140502155416" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/typesafehub/config" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="2">
+			<revision name="1.2.1" status="release" pubdate="20140502105416" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/typesafehub/config" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="2">
 				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
-				<metadata-artifact status="no" details="" size="2734" time="0" location="/home/emiranda/.ivy2/cache/com.typesafe/config/ivy-1.2.1.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/com/typesafe/config/1.2.1/config-1.2.1.pom"/>
+				<metadata-artifact status="no" details="" size="2723" time="0" location="/home/emiranda/.ivy2/cache/com.typesafe/config/ivy-1.2.1.xml" searched="false" origin-is-local="false" origin-location="file:/home/emiranda/activator-1.2.12/repository/com.typesafe/config/1.2.1/ivys/ivy.xml"/>
 				<caller organisation="com.typesafe.akka" name="akka-actor_2.11" conf="default, compile, runtime, master" rev="1.2.1" rev-constraint-default="1.2.1" rev-constraint-dynamic="1.2.1" callerrev="2.3.6"/>
 				<artifacts>
 					<artifact name="config" type="bundle" ext="jar" status="no" details="" size="219554" time="0" location="/home/emiranda/.ivy2/cache/com.typesafe/config/bundles/config-1.2.1.jar">
-						<origin-location is-local="false" location="http://repo1.maven.org/maven2/com/typesafe/config/1.2.1/config-1.2.1.jar"/>
+						<origin-location is-local="false" location="file:/home/emiranda/activator-1.2.12/repository/com.typesafe/config/1.2.1/bundles/config.jar"/>
 					</artifact>
 				</artifacts>
 			</revision>
@@ -174,9 +174,9 @@
 					</artifact>
 				</artifacts>
 			</revision>
-			<revision name="2.11.1" status="release" pubdate="20140520090221" resolver="sbt-chain" artresolver="sbt-chain" evicted="latest-revision" evicted-reason="" homepage="http://www.scala-lang.org/" extra-info.apiURL="http://www.scala-lang.org/api/2.11.1/" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="-1">
+			<revision name="2.11.1" status="release" pubdate="20140520040221" resolver="sbt-chain" artresolver="sbt-chain" evicted="latest-revision" evicted-reason="" homepage="http://www.scala-lang.org/" extra-info.apiURL="http://www.scala-lang.org/api/2.11.1/" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="-1">
 				<license name="BSD 3-Clause" url="http://www.scala-lang.org/license.html"/>
-				<metadata-artifact status="no" details="" size="2471" time="0" location="/home/emiranda/.ivy2/cache/org.scala-lang/scala-library/ivy-2.11.1.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/org/scala-lang/scala-library/2.11.1/scala-library-2.11.1.pom"/>
+				<metadata-artifact status="no" details="" size="2461" time="0" location="/home/emiranda/.ivy2/cache/org.scala-lang/scala-library/ivy-2.11.1.xml" searched="false" origin-is-local="false" origin-location="file:/home/emiranda/activator-1.2.12/repository/org.scala-lang/scala-library/2.11.1/ivys/ivy.xml"/>
 				<evicted-by rev="2.11.2"/>
 				<caller organisation="default" name="akka-bench_2.11" conf="test, compile, provided, test-internal, runtime, optional" rev="2.11.1" rev-constraint-default="2.11.1" rev-constraint-dynamic="2.11.1" callerrev="1.0"/>
 				<artifacts>

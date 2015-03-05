@@ -3,7 +3,7 @@ package pt.aigx.remoting.actors;
 import akka.actor.*;
 import pt.aigx.Config;
 import pt.aigx.RandomMessageSender;
-import pt.aigx.routing.actors.RouterActor;
+import pt.aigx.actors.routers.RouterActor;
 
 import java.util.HashMap;
 import java.util.Map;

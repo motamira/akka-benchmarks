@@ -1,7 +1,7 @@
 package pt.aigx.routing.setups;
 
 import pt.aigx.BaseSetup;
-import pt.aigx.routing.actors.RouterActor;
+import pt.aigx.actors.routers.RouterActor;
 
 /**
  * Created by emiranda on 28-02-2015.

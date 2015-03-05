@@ -1,7 +1,7 @@
 package pt.aigx.remoting.setups;
 
 import pt.aigx.BaseSetup;
-import pt.aigx.routing.actors.RouterActor;
+import pt.aigx.actors.routers.RouterActor;
 
 public class RemoteRouterSetup extends BaseSetup {
 

@@ -1,4 +1,4 @@
-package pt.aigx.routing.actors;
+package pt.aigx.actors.routers;
 
 import akka.actor.UntypedActor;
 import pt.aigx.actors.messages.RouterStringMessage;

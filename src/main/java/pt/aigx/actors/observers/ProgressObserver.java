@@ -1,6 +1,7 @@
-package pt.aigx.actors;
+package pt.aigx.actors.observers;
 
 import pt.aigx.Config;
+import pt.aigx.actors.MasterActor;
 import scala.concurrent.duration.Duration;
 import java.util.concurrent.TimeUnit;
 

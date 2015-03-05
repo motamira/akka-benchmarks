@@ -5,7 +5,7 @@ import akka.actor.ActorSystem;
 import akka.actor.Props;
 import akka.routing.FromConfig;
 import com.typesafe.config.ConfigFactory;
-import pt.aigx.actors.ProgressObserver;
+import pt.aigx.actors.observers.ProgressObserver;
 import pt.aigx.actors.messages.SimpleStringMessage;
 import java.util.HashMap;
 import java.util.Map;
@@ -69,7 +69,7 @@ abstract public class BaseSetup {
     /**
      * Subscribes the ProgressObserver actor to the event stream, specifically to Simple String messages.
      *
-     * @see pt.aigx.actors.ProgressObserver
+     * @see pt.aigx.actors.observers.ProgressObserver
      * @see pt.aigx.actors.messages.SimpleStringMessage
      */
     private void setupSubscriberActors() {
