@@ -99,6 +99,6 @@ abstract public class BaseSetup {
      */
     private void setupRouterActor() {
         Props routerProps = FromConfig.getInstance().props(Props.create(this.getRouterClass()));
-        this.setRouterActor(system.actorOf(routerProps, "routerActor"));
+        this.setRouterActor(system.actorOf(routerProps, Config.routerActor));
     }
 }
