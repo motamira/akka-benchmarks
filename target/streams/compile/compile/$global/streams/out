@@ -1,0 +1,121 @@
+[0m[[0mdebug[0m] [0m[0m
+[0m[[0mdebug[0m] [0mInitial source changes: [0m
+[0m[[0mdebug[0m] [0m	removed:Set()[0m
+[0m[[0mdebug[0m] [0m	added: Set(/home/emiranda/activator-1.2.12/akka-bench/src/main/java/pt/aigx/routing/remoting/actors/RemoteLookupActor.java, /home/emiranda/activator-1.2.12/akka-bench/src/main/java/pt/aigx/routing/RouterApplication.java, /home/emiranda/activator-1.2.12/akka-bench/src/main/java/pt/aigx/actors/observers/AbstractObserver.java, /home/emiranda/activator-1.2.12/akka-bench/src/main/java/pt/aigx/Config.java, /home/emiranda/activator-1.2.12/akka-bench/src/main/java/pt/aigx/actors/messages/SimpleStringMessage.java, /home/emiranda/activator-1.2.12/akka-bench/src/main/java/pt/aigx/actors/messages/RouterStringMessage.java, /home/emiranda/activator-1.2.12/akka-bench/src/main/java/pt/aigx/routing/remoting/setups/RemoteRouterSetup.java, /home/emiranda/activator-1.2.12/akka-bench/src/main/java/pt/aigx/routing/RouterPumper.java, /home/emiranda/activator-1.2.12/akka-bench/src/main/java/pt/aigx/actors/messages/RoutedMessage.java, /home/emiranda/activator-1.2.12/akka-bench/src/main/java/pt/aigx/actors/Pitt.java, /home/emiranda/activator-1.2.12/akka-bench/src/main/java/pt/aigx/routing/setups/RegularRouterSetup.java, /home/emiranda/activator-1.2.12/akka-bench/src/main/java/pt/aigx/routing/remoting/RemoteLookupApplication.java, /home/emiranda/activator-1.2.12/akka-bench/src/main/java/pt/aigx/actors/MasterActor.java, /home/emiranda/activator-1.2.12/akka-bench/src/main/java/pt/aigx/actors/observers/RouterObserver.java, /home/emiranda/activator-1.2.12/akka-bench/src/main/java/pt/aigx/routing/BaseSetup.java, /home/emiranda/activator-1.2.12/akka-bench/src/main/java/pt/aigx/actors/Clooney.java, /home/emiranda/activator-1.2.12/akka-bench/src/main/java/pt/aigx/routing/remoting/RemoteRouterApplication.java, /home/emiranda/activator-1.2.12/akka-bench/src/main/java/pt/aigx/routing/RouterPublisherApplication.java, /home/emiranda/activator-1.2.12/akka-bench/src/main/java/pt/aigx/routing/routers/PublisherRouterActor.java, /home/emiranda/activator-1.2.12/akka-bench/src/main/java/pt/aigx/actors/observers/ProgressObserver.java, /home/emiranda/activator-1.2.12/akka-bench/src/main/java/pt/aigx/actors/Spacey.java, /home/emiranda/activator-1.2.12/akka-bench/src/main/java/pt/aigx/routing/routers/RouterActor.java, /home/emiranda/activator-1.2.12/akka-bench/src/main/java/pt/aigx/routing/setups/PublisherRouterSetup.java)[0m
+[0m[[0mdebug[0m] [0m	modified: Set()[0m
+[0m[[0mdebug[0m] [0mRemoved products: Set()[0m
+[0m[[0mdebug[0m] [0mExternal API changes: API Changes: Set()[0m
+[0m[[0mdebug[0m] [0mModified binary dependencies: Set()[0m
+[0m[[0mdebug[0m] [0mInitial directly invalidated sources: Set(/home/emiranda/activator-1.2.12/akka-bench/src/main/java/pt/aigx/routing/remoting/actors/RemoteLookupActor.java, /home/emiranda/activator-1.2.12/akka-bench/src/main/java/pt/aigx/routing/RouterApplication.java, /home/emiranda/activator-1.2.12/akka-bench/src/main/java/pt/aigx/actors/observers/AbstractObserver.java, /home/emiranda/activator-1.2.12/akka-bench/src/main/java/pt/aigx/Config.java, /home/emiranda/activator-1.2.12/akka-bench/src/main/java/pt/aigx/actors/messages/SimpleStringMessage.java, /home/emiranda/activator-1.2.12/akka-bench/src/main/java/pt/aigx/actors/messages/RouterStringMessage.java, /home/emiranda/activator-1.2.12/akka-bench/src/main/java/pt/aigx/routing/remoting/setups/RemoteRouterSetup.java, /home/emiranda/activator-1.2.12/akka-bench/src/main/java/pt/aigx/routing/RouterPumper.java, /home/emiranda/activator-1.2.12/akka-bench/src/main/java/pt/aigx/actors/messages/RoutedMessage.java, /home/emiranda/activator-1.2.12/akka-bench/src/main/java/pt/aigx/actors/Pitt.java, /home/emiranda/activator-1.2.12/akka-bench/src/main/java/pt/aigx/routing/setups/RegularRouterSetup.java, /home/emiranda/activator-1.2.12/akka-bench/src/main/java/pt/aigx/routing/remoting/RemoteLookupApplication.java, /home/emiranda/activator-1.2.12/akka-bench/src/main/java/pt/aigx/actors/MasterActor.java, /home/emiranda/activator-1.2.12/akka-bench/src/main/java/pt/aigx/actors/observers/RouterObserver.java, /home/emiranda/activator-1.2.12/akka-bench/src/main/java/pt/aigx/routing/BaseSetup.java, /home/emiranda/activator-1.2.12/akka-bench/src/main/java/pt/aigx/actors/Clooney.java, /home/emiranda/activator-1.2.12/akka-bench/src/main/java/pt/aigx/routing/remoting/RemoteRouterApplication.java, /home/emiranda/activator-1.2.12/akka-bench/src/main/java/pt/aigx/routing/RouterPublisherApplication.java, /home/emiranda/activator-1.2.12/akka-bench/src/main/java/pt/aigx/routing/routers/PublisherRouterActor.java, /home/emiranda/activator-1.2.12/akka-bench/src/main/java/pt/aigx/actors/observers/ProgressObserver.java, /home/emiranda/activator-1.2.12/akka-bench/src/main/java/pt/aigx/actors/Spacey.java, /home/emiranda/activator-1.2.12/akka-bench/src/main/java/pt/aigx/routing/routers/RouterActor.java, /home/emiranda/activator-1.2.12/akka-bench/src/main/java/pt/aigx/routing/setups/PublisherRouterSetup.java)[0m
+[0m[[0mdebug[0m] [0m[0m
+[0m[[0mdebug[0m] [0mSources indirectly invalidated by:[0m
+[0m[[0mdebug[0m] [0m	product: Set()[0m
+[0m[[0mdebug[0m] [0m	binary dep: Set()[0m
+[0m[[0mdebug[0m] [0m	external source: Set()[0m
+[0m[[0mdebug[0m] [0mAll initially invalidated sources: Set(/home/emiranda/activator-1.2.12/akka-bench/src/main/java/pt/aigx/routing/remoting/actors/RemoteLookupActor.java, /home/emiranda/activator-1.2.12/akka-bench/src/main/java/pt/aigx/routing/RouterApplication.java, /home/emiranda/activator-1.2.12/akka-bench/src/main/java/pt/aigx/actors/observers/AbstractObserver.java, /home/emiranda/activator-1.2.12/akka-bench/src/main/java/pt/aigx/Config.java, /home/emiranda/activator-1.2.12/akka-bench/src/main/java/pt/aigx/actors/messages/SimpleStringMessage.java, /home/emiranda/activator-1.2.12/akka-bench/src/main/java/pt/aigx/actors/messages/RouterStringMessage.java, /home/emiranda/activator-1.2.12/akka-bench/src/main/java/pt/aigx/routing/remoting/setups/RemoteRouterSetup.java, /home/emiranda/activator-1.2.12/akka-bench/src/main/java/pt/aigx/routing/RouterPumper.java, /home/emiranda/activator-1.2.12/akka-bench/src/main/java/pt/aigx/actors/messages/RoutedMessage.java, /home/emiranda/activator-1.2.12/akka-bench/src/main/java/pt/aigx/actors/Pitt.java, /home/emiranda/activator-1.2.12/akka-bench/src/main/java/pt/aigx/routing/setups/RegularRouterSetup.java, /home/emiranda/activator-1.2.12/akka-bench/src/main/java/pt/aigx/routing/remoting/RemoteLookupApplication.java, /home/emiranda/activator-1.2.12/akka-bench/src/main/java/pt/aigx/actors/MasterActor.java, /home/emiranda/activator-1.2.12/akka-bench/src/main/java/pt/aigx/actors/observers/RouterObserver.java, /home/emiranda/activator-1.2.12/akka-bench/src/main/java/pt/aigx/routing/BaseSetup.java, /home/emiranda/activator-1.2.12/akka-bench/src/main/java/pt/aigx/actors/Clooney.java, /home/emiranda/activator-1.2.12/akka-bench/src/main/java/pt/aigx/routing/remoting/RemoteRouterApplication.java, /home/emiranda/activator-1.2.12/akka-bench/src/main/java/pt/aigx/routing/RouterPublisherApplication.java, /home/emiranda/activator-1.2.12/akka-bench/src/main/java/pt/aigx/routing/routers/PublisherRouterActor.java, /home/emiranda/activator-1.2.12/akka-bench/src/main/java/pt/aigx/actors/observers/ProgressObserver.java, /home/emiranda/activator-1.2.12/akka-bench/src/main/java/pt/aigx/actors/Spacey.java, /home/emiranda/activator-1.2.12/akka-bench/src/main/java/pt/aigx/routing/routers/RouterActor.java, /home/emiranda/activator-1.2.12/akka-bench/src/main/java/pt/aigx/routing/setups/PublisherRouterSetup.java)[0m
+[0m[[0mdebug[0m] [0mRecompiling all 23 sources: invalidated sources (23) exceeded 50.0% of all sources[0m
+[0m[[0minfo[0m] [0mCompiling 23 Java sources to /home/emiranda/activator-1.2.12/akka-bench/target/scala-2.11/classes...[0m
+[0m[[0mdebug[0m] [0mAttempting to call javac directly...[0m
+[0m[[0mdebug[0m] [0mcom.sun.tools.javac.Main not found with appropriate method signature; forking javac instead[0m
+[0m[[0mdebug[0m] [0mForking javac: javac @/tmp/sbt_a58c7e85/argfile[0m
+[0m[[0mdebug[0m] [0mjavac returned exit code: 0[0m
+[0m[[0mdebug[0m] [0mJava compilation took 1.485476036 s[0m
+[0m[[0mdebug[0m] [0mJava analysis took 0.205133249 s[0m
+[0m[[0mdebug[0m] [0mInvalidating by inheritance (transitively)...[0m
+[0m[[0mdebug[0m] [0mInitial set of included nodes: Set(/home/emiranda/activator-1.2.12/akka-bench/src/main/java/pt/aigx/actors/Pitt.java)[0m
+[0m[[0mdebug[0m] [0mInvalidated by transitive public inheritance: Set(/home/emiranda/activator-1.2.12/akka-bench/src/main/java/pt/aigx/actors/Pitt.java)[0m
+[0m[[0mdebug[0m] [0mInvalidated by direct dependency: Set()[0m
+[0m[[0mdebug[0m] [0mInvalidating by inheritance (transitively)...[0m
+[0m[[0mdebug[0m] [0mInitial set of included nodes: Set(/home/emiranda/activator-1.2.12/akka-bench/src/main/java/pt/aigx/Config.java)[0m
+[0m[[0mdebug[0m] [0mInvalidated by transitive public inheritance: Set(/home/emiranda/activator-1.2.12/akka-bench/src/main/java/pt/aigx/Config.java)[0m
+[0m[[0mdebug[0m] [0mInvalidated by direct dependency: Set(/home/emiranda/activator-1.2.12/akka-bench/src/main/java/pt/aigx/Config.java)[0m
+[0m[[0mdebug[0m] [0mInvalidating by inheritance (transitively)...[0m
+[0m[[0mdebug[0m] [0mInitial set of included nodes: Set(/home/emiranda/activator-1.2.12/akka-bench/src/main/java/pt/aigx/routing/remoting/RemoteRouterApplication.java)[0m
+[0m[[0mdebug[0m] [0mInvalidated by transitive public inheritance: Set(/home/emiranda/activator-1.2.12/akka-bench/src/main/java/pt/aigx/routing/remoting/RemoteRouterApplication.java)[0m
+[0m[[0mdebug[0m] [0mInvalidated by direct dependency: Set()[0m
+[0m[[0mdebug[0m] [0mInvalidating by inheritance (transitively)...[0m
+[0m[[0mdebug[0m] [0mInitial set of included nodes: Set(/home/emiranda/activator-1.2.12/akka-bench/src/main/java/pt/aigx/actors/messages/RouterStringMessage.java)[0m
+[0m[[0mdebug[0m] [0mInvalidated by transitive public inheritance: Set(/home/emiranda/activator-1.2.12/akka-bench/src/main/java/pt/aigx/actors/messages/RouterStringMessage.java)[0m
+[0m[[0mdebug[0m] [0mInvalidated by direct dependency: Set()[0m
+[0m[[0mdebug[0m] [0mInvalidating by inheritance (transitively)...[0m
+[0m[[0mdebug[0m] [0mInitial set of included nodes: Set(/home/emiranda/activator-1.2.12/akka-bench/src/main/java/pt/aigx/actors/Clooney.java)[0m
+[0m[[0mdebug[0m] [0mInvalidated by transitive public inheritance: Set(/home/emiranda/activator-1.2.12/akka-bench/src/main/java/pt/aigx/actors/Clooney.java)[0m
+[0m[[0mdebug[0m] [0mInvalidated by direct dependency: Set()[0m
+[0m[[0mdebug[0m] [0mInvalidating by inheritance (transitively)...[0m
+[0m[[0mdebug[0m] [0mInitial set of included nodes: Set(/home/emiranda/activator-1.2.12/akka-bench/src/main/java/pt/aigx/actors/Spacey.java)[0m
+[0m[[0mdebug[0m] [0mInvalidated by transitive public inheritance: Set(/home/emiranda/activator-1.2.12/akka-bench/src/main/java/pt/aigx/actors/Spacey.java)[0m
+[0m[[0mdebug[0m] [0mInvalidated by direct dependency: Set()[0m
+[0m[[0mdebug[0m] [0mInvalidating by inheritance (transitively)...[0m
+[0m[[0mdebug[0m] [0mInitial set of included nodes: Set(/home/emiranda/activator-1.2.12/akka-bench/src/main/java/pt/aigx/actors/messages/RoutedMessage.java)[0m
+[0m[[0mdebug[0m] [0mInvalidated by transitive public inheritance: Set(/home/emiranda/activator-1.2.12/akka-bench/src/main/java/pt/aigx/actors/messages/RoutedMessage.java)[0m
+[0m[[0mdebug[0m] [0mInvalidated by direct dependency: Set()[0m
+[0m[[0mdebug[0m] [0mInvalidating by inheritance (transitively)...[0m
+[0m[[0mdebug[0m] [0mInitial set of included nodes: Set(/home/emiranda/activator-1.2.12/akka-bench/src/main/java/pt/aigx/routing/setups/RegularRouterSetup.java)[0m
+[0m[[0mdebug[0m] [0mInvalidated by transitive public inheritance: Set(/home/emiranda/activator-1.2.12/akka-bench/src/main/java/pt/aigx/routing/setups/RegularRouterSetup.java)[0m
+[0m[[0mdebug[0m] [0mInvalidated by direct dependency: Set()[0m
+[0m[[0mdebug[0m] [0mInvalidating by inheritance (transitively)...[0m
+[0m[[0mdebug[0m] [0mInitial set of included nodes: Set(/home/emiranda/activator-1.2.12/akka-bench/src/main/java/pt/aigx/actors/observers/AbstractObserver.java)[0m
+[0m[[0mdebug[0m] [0mInvalidated by transitive public inheritance: Set(/home/emiranda/activator-1.2.12/akka-bench/src/main/java/pt/aigx/actors/observers/AbstractObserver.java)[0m
+[0m[[0mdebug[0m] [0mInvalidated by direct dependency: Set()[0m
+[0m[[0mdebug[0m] [0mInvalidating by inheritance (transitively)...[0m
+[0m[[0mdebug[0m] [0mInitial set of included nodes: Set(/home/emiranda/activator-1.2.12/akka-bench/src/main/java/pt/aigx/routing/remoting/RemoteLookupApplication.java)[0m
+[0m[[0mdebug[0m] [0mInvalidated by transitive public inheritance: Set(/home/emiranda/activator-1.2.12/akka-bench/src/main/java/pt/aigx/routing/remoting/RemoteLookupApplication.java)[0m
+[0m[[0mdebug[0m] [0mInvalidated by direct dependency: Set()[0m
+[0m[[0mdebug[0m] [0mInvalidating by inheritance (transitively)...[0m
+[0m[[0mdebug[0m] [0mInitial set of included nodes: Set(/home/emiranda/activator-1.2.12/akka-bench/src/main/java/pt/aigx/actors/observers/RouterObserver.java)[0m
+[0m[[0mdebug[0m] [0mInvalidated by transitive public inheritance: Set(/home/emiranda/activator-1.2.12/akka-bench/src/main/java/pt/aigx/actors/observers/RouterObserver.java)[0m
+[0m[[0mdebug[0m] [0mInvalidated by direct dependency: Set()[0m
+[0m[[0mdebug[0m] [0mInvalidating by inheritance (transitively)...[0m
+[0m[[0mdebug[0m] [0mInitial set of included nodes: Set(/home/emiranda/activator-1.2.12/akka-bench/src/main/java/pt/aigx/actors/MasterActor.java)[0m
+[0m[[0mdebug[0m] [0mInvalidated by transitive public inheritance: Set(/home/emiranda/activator-1.2.12/akka-bench/src/main/java/pt/aigx/actors/MasterActor.java)[0m
+[0m[[0mdebug[0m] [0mInvalidated by direct dependency: Set()[0m
+[0m[[0mdebug[0m] [0mInvalidating by inheritance (transitively)...[0m
+[0m[[0mdebug[0m] [0mInitial set of included nodes: Set(/home/emiranda/activator-1.2.12/akka-bench/src/main/java/pt/aigx/routing/routers/PublisherRouterActor.java)[0m
+[0m[[0mdebug[0m] [0mInvalidated by transitive public inheritance: Set(/home/emiranda/activator-1.2.12/akka-bench/src/main/java/pt/aigx/routing/routers/PublisherRouterActor.java)[0m
+[0m[[0mdebug[0m] [0mInvalidated by direct dependency: Set()[0m
+[0m[[0mdebug[0m] [0mInvalidating by inheritance (transitively)...[0m
+[0m[[0mdebug[0m] [0mInitial set of included nodes: Set(/home/emiranda/activator-1.2.12/akka-bench/src/main/java/pt/aigx/routing/remoting/actors/RemoteLookupActor.java)[0m
+[0m[[0mdebug[0m] [0mInvalidated by transitive public inheritance: Set(/home/emiranda/activator-1.2.12/akka-bench/src/main/java/pt/aigx/routing/remoting/actors/RemoteLookupActor.java)[0m
+[0m[[0mdebug[0m] [0mInvalidated by direct dependency: Set()[0m
+[0m[[0mdebug[0m] [0mInvalidating by inheritance (transitively)...[0m
+[0m[[0mdebug[0m] [0mInitial set of included nodes: Set(/home/emiranda/activator-1.2.12/akka-bench/src/main/java/pt/aigx/routing/RouterApplication.java)[0m
+[0m[[0mdebug[0m] [0mInvalidated by transitive public inheritance: Set(/home/emiranda/activator-1.2.12/akka-bench/src/main/java/pt/aigx/routing/RouterApplication.java)[0m
+[0m[[0mdebug[0m] [0mInvalidated by direct dependency: Set()[0m
+[0m[[0mdebug[0m] [0mInvalidating by inheritance (transitively)...[0m
+[0m[[0mdebug[0m] [0mInitial set of included nodes: Set(/home/emiranda/activator-1.2.12/akka-bench/src/main/java/pt/aigx/actors/observers/ProgressObserver.java)[0m
+[0m[[0mdebug[0m] [0mInvalidated by transitive public inheritance: Set(/home/emiranda/activator-1.2.12/akka-bench/src/main/java/pt/aigx/actors/observers/ProgressObserver.java)[0m
+[0m[[0mdebug[0m] [0mInvalidated by direct dependency: Set()[0m
+[0m[[0mdebug[0m] [0mInvalidating by inheritance (transitively)...[0m
+[0m[[0mdebug[0m] [0mInitial set of included nodes: Set(/home/emiranda/activator-1.2.12/akka-bench/src/main/java/pt/aigx/actors/messages/SimpleStringMessage.java)[0m
+[0m[[0mdebug[0m] [0mInvalidated by transitive public inheritance: Set(/home/emiranda/activator-1.2.12/akka-bench/src/main/java/pt/aigx/actors/messages/SimpleStringMessage.java)[0m
+[0m[[0mdebug[0m] [0mInvalidated by direct dependency: Set()[0m
+[0m[[0mdebug[0m] [0mInvalidating by inheritance (transitively)...[0m
+[0m[[0mdebug[0m] [0mInitial set of included nodes: Set(/home/emiranda/activator-1.2.12/akka-bench/src/main/java/pt/aigx/routing/remoting/setups/RemoteRouterSetup.java)[0m
+[0m[[0mdebug[0m] [0mInvalidated by transitive public inheritance: Set(/home/emiranda/activator-1.2.12/akka-bench/src/main/java/pt/aigx/routing/remoting/setups/RemoteRouterSetup.java)[0m
+[0m[[0mdebug[0m] [0mInvalidated by direct dependency: Set()[0m
+[0m[[0mdebug[0m] [0mInvalidating by inheritance (transitively)...[0m
+[0m[[0mdebug[0m] [0mInitial set of included nodes: Set(/home/emiranda/activator-1.2.12/akka-bench/src/main/java/pt/aigx/routing/RouterPumper.java)[0m
+[0m[[0mdebug[0m] [0mInvalidated by transitive public inheritance: Set(/home/emiranda/activator-1.2.12/akka-bench/src/main/java/pt/aigx/routing/RouterPumper.java)[0m
+[0m[[0mdebug[0m] [0mInvalidated by direct dependency: Set()[0m
+[0m[[0mdebug[0m] [0mInvalidating by inheritance (transitively)...[0m
+[0m[[0mdebug[0m] [0mInitial set of included nodes: Set(/home/emiranda/activator-1.2.12/akka-bench/src/main/java/pt/aigx/routing/routers/RouterActor.java)[0m
+[0m[[0mdebug[0m] [0mInvalidated by transitive public inheritance: Set(/home/emiranda/activator-1.2.12/akka-bench/src/main/java/pt/aigx/routing/routers/RouterActor.java)[0m
+[0m[[0mdebug[0m] [0mInvalidated by direct dependency: Set()[0m
+[0m[[0mdebug[0m] [0mInvalidating by inheritance (transitively)...[0m
+[0m[[0mdebug[0m] [0mInitial set of included nodes: Set(/home/emiranda/activator-1.2.12/akka-bench/src/main/java/pt/aigx/routing/setups/PublisherRouterSetup.java)[0m
+[0m[[0mdebug[0m] [0mInvalidated by transitive public inheritance: Set(/home/emiranda/activator-1.2.12/akka-bench/src/main/java/pt/aigx/routing/setups/PublisherRouterSetup.java)[0m
+[0m[[0mdebug[0m] [0mInvalidated by direct dependency: Set()[0m
+[0m[[0mdebug[0m] [0mInvalidating by inheritance (transitively)...[0m
+[0m[[0mdebug[0m] [0mInitial set of included nodes: Set(/home/emiranda/activator-1.2.12/akka-bench/src/main/java/pt/aigx/routing/RouterPublisherApplication.java)[0m
+[0m[[0mdebug[0m] [0mInvalidated by transitive public inheritance: Set(/home/emiranda/activator-1.2.12/akka-bench/src/main/java/pt/aigx/routing/RouterPublisherApplication.java)[0m
+[0m[[0mdebug[0m] [0mInvalidated by direct dependency: Set()[0m
+[0m[[0mdebug[0m] [0mInvalidating by inheritance (transitively)...[0m
+[0m[[0mdebug[0m] [0mInitial set of included nodes: Set(/home/emiranda/activator-1.2.12/akka-bench/src/main/java/pt/aigx/routing/BaseSetup.java)[0m
+[0m[[0mdebug[0m] [0mInvalidated by transitive public inheritance: Set(/home/emiranda/activator-1.2.12/akka-bench/src/main/java/pt/aigx/routing/BaseSetup.java)[0m
+[0m[[0mdebug[0m] [0mInvalidated by direct dependency: Set()[0m
+[0m[[0mdebug[0m] [0mNew invalidations:[0m
+[0m[[0mdebug[0m] [0m	Set()[0m
+[0m[[0mdebug[0m] [0mInitial set of included nodes: Set()[0m
+[0m[[0mdebug[0m] [0mPreviously invalidated, but (transitively) depend on new invalidations:[0m
+[0m[[0mdebug[0m] [0m	Set()[0m
+[0m[[0mdebug[0m] [0mAll newly invalidated sources after taking into account (previously) recompiled sources:Set()[0m

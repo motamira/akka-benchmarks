@@ -1,11 +1,8 @@
 package pt.aigx.routing.setups;
 
-import pt.aigx.BaseSetup;
-import pt.aigx.actors.routers.RouterActor;
+import pt.aigx.routing.BaseSetup;
+import pt.aigx.routing.routers.RouterActor;
 
-/**
- * Created by emiranda on 28-02-2015.
- */
 public class RegularRouterSetup extends BaseSetup {
 
     @Override
@@ -15,6 +12,6 @@ public class RegularRouterSetup extends BaseSetup {
 
     @Override
     public String getSystemConfig() {
-        return "router";
+        return "routing";
     }
 }

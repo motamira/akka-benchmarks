@@ -1,6 +1,5 @@
 package pt.aigx.routing;
 
-import pt.aigx.RandomMessageSender;
 import pt.aigx.routing.setups.RegularRouterSetup;
 
 public class RouterApplication {
@@ -10,6 +9,6 @@ public class RouterApplication {
      */
     public static void main(String[] args) {
         RegularRouterSetup setup = new RegularRouterSetup();
-        new RandomMessageSender().send(setup.getRouterActor(), setup.getActorReferences());
+        new RouterPumper(setup.getRouterActor(), setup.getActorReferences()).pump();
     }
 }

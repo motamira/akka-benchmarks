@@ -1,0 +1,5 @@
+[0m[[0mdebug[0m] [0mCopy resource mappings: [0m
+[0m[[0mdebug[0m] [0m	(/home/emiranda/activator-1.2.12/akka-bench/src/main/resources/remote-lookup.conf,/home/emiranda/activator-1.2.12/akka-bench/target/scala-2.11/classes/remote-lookup.conf)[0m
+[0m[[0mdebug[0m] [0m	(/home/emiranda/activator-1.2.12/akka-bench/src/main/resources/remote-router.conf,/home/emiranda/activator-1.2.12/akka-bench/target/scala-2.11/classes/remote-router.conf)[0m
+[0m[[0mdebug[0m] [0m	(/home/emiranda/activator-1.2.12/akka-bench/src/main/resources/common.conf,/home/emiranda/activator-1.2.12/akka-bench/target/scala-2.11/classes/common.conf)[0m
+[0m[[0mdebug[0m] [0m	(/home/emiranda/activator-1.2.12/akka-bench/src/main/resources/routing.conf,/home/emiranda/activator-1.2.12/akka-bench/target/scala-2.11/classes/routing.conf)[0m

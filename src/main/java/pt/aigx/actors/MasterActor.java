@@ -17,13 +17,19 @@ abstract public class MasterActor extends UntypedActor {
      */
     abstract public boolean isMessageForMe(String text);
 
+    /**
+     * To simulate the time that each actor takes to process a determined task
+     * @return The processing delay
+     */
+    abstract public long getProcessingDelay();
+
     @Override
     public void onReceive(Object message) throws Exception {
 
         String text = this.extractTextFromMessage(message);
 
         if (this.isMessageForMe(text)) {
-            // In a real system some kind of process would be executed here
+            Thread.sleep(this.getProcessingDelay());
             this.publishMessageProcessed();
         }
     }

@@ -1,15 +1,11 @@
 package pt.aigx.routing.setups;
 
 import akka.actor.ActorRef;
-import pt.aigx.BaseSetup;
+import pt.aigx.routing.BaseSetup;
 import pt.aigx.actors.messages.SimpleStringMessage;
-import pt.aigx.actors.routers.PublisherRouterActor;
-
+import pt.aigx.routing.routers.PublisherRouterActor;
 import java.util.Map;
 
-/**
- * Created by emiranda on 28-02-2015.
- */
 public class PublisherRouterSetup extends BaseSetup {
 
     public PublisherRouterSetup() {
@@ -26,6 +22,6 @@ public class PublisherRouterSetup extends BaseSetup {
 
     @Override
     public String getSystemConfig() {
-        return "router";
+        return "routing";
     }
 }
